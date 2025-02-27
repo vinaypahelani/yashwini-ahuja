@@ -6785,7 +6785,7 @@ button.bg-success:focus {
 }
 
 .bg-info {
-  background-color: #17a2b8 !important;
+  background-color: #0096c7 !important;
 }
 
 a.bg-info:hover,
@@ -6796,7 +6796,7 @@ button.bg-info:focus {
 }
 
 .bg-warning {
-  background-color: #ffc107 !important;
+  background-color: #0096c7 !important;
 }
 
 a.bg-warning:hover,
@@ -6807,7 +6807,7 @@ button.bg-warning:focus {
 }
 
 .bg-danger {
-  background-color: #dc3545 !important;
+  background-color: #5fa8d3 !important;
 }
 
 a.bg-danger:hover,
@@ -6829,7 +6829,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background-color: #0077b6 !important;
 }
 
 a.bg-dark:hover,
@@ -10339,6 +10339,14 @@ h6,
   align-items: center;
   justify-content: center;
   border-radius: 60px;
+  /* filter: contrast(1) brightness(1.1); */
+}
+
+.service-icon img,
+.service-icon svg path.icon-inner-element {
+  stroke-width: 2px; /* Increase line thickness */
+  fill: #ffffff; /* Pure white fill */
+  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.8)); /* Add slight glow */
 }
 
 .portfolio-item .portfolio-btn {
@@ -10404,4 +10412,25 @@ p {
 
 .txtalign {
   text-align: justify;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-description {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-description p {
+  flex-grow: 1;
+}
+
+.read-more-container {
+  margin-top: auto;
+  padding-bottom: 15px;
 }
